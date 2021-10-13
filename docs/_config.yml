@@ -1,1 +1,1 @@
-exclude: ['CNAME']
+exclude: ['*.md', 'CNAME', '.customPath']
