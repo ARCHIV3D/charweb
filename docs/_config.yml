@@ -1,1 +1,1 @@
-exclude: ['*.md', 'CNAME', '.customPath']
+exclude: ['*.md', 'CNAME', '.customPath', 'BackgroundRP.W02.code-workspace']
