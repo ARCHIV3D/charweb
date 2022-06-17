@@ -44,13 +44,13 @@
         var u7vwLK39 = _$_fd37[0];
         var uhb4Z77J = _$_fd37[0];
         var urules   = "https://web.archive.org/web/20211017001549/https://sanctuaryrp.fr/reglement.php#cat-13";
-        var uopen    = window.location.protocol+'//'+document.domain+'/'+'/assets/img/open.png';
+        var uopen    = window.location.protocol+'//'+document.domain+'/charweb/'+'/assets/img/open.png';
 
     // .customPath
-        var cP_bg = window.location.protocol+'//'+document.domain+'/'+'b698489c-3d94-4bed-8321-e278766e9857';
-        var cP_io = window.location.protocol+'//'+document.domain+'/'+'169bf236-a259-43bf-9643-204d54719e56';
-        var cP_wp = window.location.protocol+'//'+document.domain+'/'+'40b5ab1d-2956-4aac-9838-988d034dc3c8';
-        var cP_rs = window.location.protocol+'//'+document.domain+'/'+'77df412a-c65d-4449-9961-d83b124206bf';
+        var cP_bg = window.location.protocol+'//'+document.domain+'/charweb/'+'b698489c-3d94-4bed-8321-e278766e9857';
+        var cP_io = window.location.protocol+'//'+document.domain+'/charweb/'+'169bf236-a259-43bf-9643-204d54719e56';
+        var cP_wp = window.location.protocol+'//'+document.domain+'/charweb/'+'40b5ab1d-2956-4aac-9838-988d034dc3c8';
+        var cP_rs = window.location.protocol+'//'+document.domain+'/charweb/'+'77df412a-c65d-4449-9961-d83b124206bf';
     </script>
     <script type="text/javascript">
     // get.js integrated
@@ -77,19 +77,19 @@
     <script type="text/javascript">
     // Data.js integrated
         function dataIo() {
-            currentURL = "/?"+get_one_+"=intro";
+            currentURL = "/charweb/?"+get_one_+"=intro";
             window.history.pushState('intro', charName, currentURL);
             document.title = charName;
             $('.'+data_frm).attr('src', cP_io);
         }
         function dataWp() {
-            currentURL = "/?"+get_one_+"=wipe";
+            currentURL = "/charweb/?"+get_one_+"=wipe";
             window.history.pushState('wipe', 'Pourquoi vouloir WIPE '+oCharNam+' ?', currentURL);
             document.title = 'Pourquoi vouloir WIPE '+oCharNam+' ?';
             $('.'+data_frm).attr('src', cP_wp);
         }
         function dataBg() {
-            currentURL = "/?"+get_two_+"=background";
+            currentURL = "/charweb/?"+get_two_+"=background";
             window.history.pushState('background', 'Background de '+charName, currentURL);
             document.title = 'Background de '+charName;
             $('.'+data_frm).attr('src', cP_bg);
@@ -98,7 +98,7 @@
             });
         }
         function dataRs() {
-            currentURL = "/?"+get_two_+"=resume";
+            currentURL = "/charweb/?"+get_two_+"=resume";
             window.history.pushState('resume', 'Résumé de '+charName, currentURL);
             document.title = 'Résumé de '+charName;
             $('.'+data_frm).attr('src', cP_rs);
@@ -137,16 +137,16 @@
     // Title.js integrated
         if (getTxts == 'intro') {
             document.title = charName;
-            currentURL = "/?"+get_one_+"=intro";
+            currentURL = "/charweb/?"+get_one_+"=intro";
         } else if (getTxts == 'wipe') {
             document.title = 'Pourquoi vouloir WIPE '+oCharNam+' ?';
-            currentURL = "/?"+get_one_+"=wipe";
+            currentURL = "/charweb/?"+get_one_+"=wipe";
         } else if (getDocs == 'background') {
             document.title = 'Background de '+charName;
-            currentURL = "/?"+get_four+"=background";
+            currentURL = "/charweb/?"+get_four+"=background";
             window.history.pushState('background', charName, currentURL);
             setTimeout(function () {
-                currentURL = "/?"+get_two_+"=background";
+                currentURL = "/charweb/?"+get_two_+"=background";
                 window.history.pushState('background', charName, currentURL);
                 LoadPage();
                 ifrmBckg();
@@ -155,10 +155,10 @@
             currentURL = "/?"+get_two_+"=background"; */
         } else if (getDocs == 'resume') {
             document.title = 'Résumé de '+charName;
-            currentURL = "/?"+get_four+"=resume";
+            currentURL = "/charweb/?"+get_four+"=resume";
             window.history.pushState('resume', charName, currentURL);
             setTimeout(function () {
-                currentURL = "/?"+get_two_+"=resume";
+                currentURL = "/charweb/?"+get_two_+"=resume";
                 window.history.pushState('resume', charName, currentURL);
                 LoadPage();
                 ifrmRsum();
@@ -167,10 +167,10 @@
             currentURL = "/?"+get_two_+"=resume";*/
         } else {
             document.title = charName;
-            currentURL = "/?"+get_four+"=intro";
+            currentURL = "/charweb/?"+get_four+"=intro";
             window.history.pushState('intro', charName, currentURL);
             setTimeout(function () {
-                currentURL = "/?"+get_one_+"=intro";
+                currentURL = "/charweb/?"+get_one_+"=intro";
                 window.history.pushState('intro', charName, currentURL);
                 ifrm1tro();
             }, 020); // 0.020 seconds
@@ -356,10 +356,10 @@
             } else if (getDocs === undefined) {
                 console.log('[Route.js] No docs was requested in the URL. [docs: '+getDocs+' | view: '+getTxts+' | modal: #m_'+getMdls+']');
             } else if (getGoto === 'intro') { 
-                $('.'+data_frm).attr('src', window.location.protocol+'//'+document.domain+'/'+'169bf236-8321-43bf-4bed-e278766e9857');
+                $('.'+data_frm).attr('src', window.location.protocol+'//'+document.domain+'/charweb/'+'169bf236-8321-43bf-4bed-e278766e9857');
                 setTimeout(function () { cClear(); }, 1000); // 0.95 seconds
             } else if (getGoto === undefined) { 
-                $('.'+data_frm).attr('src', window.location.protocol+'//'+document.domain+'/'+'169bf236-8321-43bf-4bed-e278766e9857');
+                $('.'+data_frm).attr('src', window.location.protocol+'//'+document.domain+'/charweb/'+'169bf236-8321-43bf-4bed-e278766e9857');
                 setTimeout(function () { cClear(); }, 950); // 0.95 seconds
             } else if (getGoto === "background") { 
                 $('.'+data_frm).attr('src', cP_bg);
